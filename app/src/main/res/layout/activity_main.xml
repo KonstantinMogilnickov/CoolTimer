@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/darkGreen">
+
+    <SeekBar
+        android:id="@+id/seekBarTimer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="18dp"
+        android:max="120"
+        android:progress="0" />
+
+    <TextView
+        android:textColor = "@color/white"
+        android:id="@+id/textViewSelectedTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/seekBarTimer"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:text="Выбранное время: 0 секунд" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="411dp"
+        android:layout_height="348dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginBottom="235dp"
+        app:srcCompat="@drawable/pngwing" />
+
+    <TextView
+        android:id="@+id/textViewRemainingTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/imageView2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="-158dp"
+        android:text=" 0 секунд"
+        android:textColor = "@color/black"/>
+
+    <Button
+        android:id="@+id/startTimerButton"
+        android:layout_width="89dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/imageView2"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="-252dp"
+        android:backgroundTint="@color/darkGreen"
+        android:text="Старт" />
+
+</RelativeLayout>

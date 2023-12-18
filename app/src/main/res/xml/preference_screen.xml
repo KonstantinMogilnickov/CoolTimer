@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <EditTextPreference
+        android:key="example_text"
+        android:title="Пример текстовой настройки"
+        android:summary="Введите текст"
+        android:inputType="text" />
+
+    <CheckBoxPreference
+        android:defaultValue="true"
+        android:key="enable_sound"
+        android:title="Выклюсить звук"
+        android:summaryOff="Звук выключен"
+        android:summaryOn="Звук включён"
+
+        />
+</PreferenceScreen>
